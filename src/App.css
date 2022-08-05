@@ -2,6 +2,13 @@
   text-align: center;
 }
 
+.main-bg {
+    height: 450px;
+    background-image: url('assets/bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
