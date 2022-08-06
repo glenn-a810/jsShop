@@ -1,7 +1,11 @@
 import './App.css';
 import { Container, Nav, Navbar } from "react-bootstrap";
+import { useState } from "react";
+import data from "./data";
 
 function App() {
+  const [food, setFood] = useState(data)
+
   return (
     <div className="App">
       <Navbar bg='light' variant='light'>
@@ -19,9 +23,10 @@ function App() {
       <div className='container'>
         <div className='row'>
           <div className='col-md-4'>
-            <img src='https://i.ibb.co/j3jNkXn/food1.jpg' alt='food1' width='80%' />
-            <h4>상품명</h4>
-            <p>상품설명</p>
+            <img src={ food[0].img } alt='food1' width='80%'/>
+            <h4>{ food[0].title }</h4>
+            <p>{ food[0].content }</p>
+            <p>{ food[0].price }원</p>
           </div>
           <div className='col-md-4'>
             <img src='https://i.ibb.co/cNF60z6/food2.jpg' alt='food2' width='80%' />

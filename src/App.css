@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.col-md-4 {
+    margin-top: 20px;
+}
+
 .main-bg {
     height: 450px;
     background-image: url('assets/bg.jpg');
