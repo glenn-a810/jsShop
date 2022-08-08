@@ -50,9 +50,8 @@ function App() {
             </div>
           </>
         } />
-        <Route path='/food' element={
-          <Detail />
-        } />
+        <Route path='/food' element={ <Detail food={food} /> } />
+        <Route path='/food/:id' element={ <Detail food={food} /> } />
         <Route path='*' element={<div>404 not found</div>} />
         <Route path='about' element={ <About /> } >
           <Route path='member' element={ <div>Member</div> } />
